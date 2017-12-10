@@ -12,11 +12,13 @@ Vagrant are based on the idea of “virtual” computing, where your application
 As mentioned earlier, once you’ve used Vagrant (and another tool like Virtual Box) to set up a virtual server, you run a provisioning script the exact same way on each machine. But using Vagrant on a Windows environment is not always without complications.
 <br>
 **Expected behavior:**
-Run Vagrant up, Virtual machine should be running
+<p>Run Vagrant up, Virtual machine should be running</p>
 <br>
 **Actual behavior:**
-Blue Screen of death, after repairing disk it returns this error:
+<p>Blue Screen of death, after repairing disk it returns this error:</p>
+
 “There was an error while executing VBoxManage, a CLI used by Vagrant for controlling VirtualBox. The command and stderr is shown below.”
+<br>
 So, after you as a developer tries to google the error, we found out the Hyper-V in windows 8 and higher is the culprit! 
 
 ### Microsoft Hyper-V
