@@ -1,4 +1,5 @@
 # UFO - Blog Entry
+Google Doc: https://docs.google.com/document/d/1C-KNc_rvA-VhmGAhDRQlVEIeemzIJq1VguMgb6h9KdA/edit?usp=sharing
 
 
 **Requirements:** (Skal slettes senere)
@@ -8,7 +9,8 @@
 Blog Example from class: http://www.theserverside.com/tip/Is-JSON-and-XML-your-REST-performance-bottleneck
 
 
-## Topic:
-
+## Topics:
+1. VMs/Vagrant
+2. Digital Ocean
 
 
