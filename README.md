@@ -29,6 +29,8 @@ So, after you as a developer tries to google the error, we found out the Hyper-V
 ### Microsoft Hyper-V
 Back in 2008, Microsoft introduced Hyper-V as a virtualization platform, and some tools uses this platform today. Hyper-V is a hybrid hypervisor, which is installed from OS, and during installation it redesigns the OS architecture and becomes just like a next layer on the physical hardware.
 
+![hyperv](https://user-images.githubusercontent.com/11289686/33810342-d365716c-de03-11e7-9c61-ec3b0b4624c2.png)
+
 But, enabling Hyper-V will cause VirtualBox, VMware, and any other virtualization technology to no longer work on Windows.
 Fortunately, there are many solutions online, like:
 Disabling the Hyper-V services, from the "Turn windows features on or off" Control panel setting.
