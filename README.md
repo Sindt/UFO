@@ -12,10 +12,13 @@ Vagrant are based on the idea of “virtual” computing, where your application
 As mentioned earlier, once you’ve used Vagrant (and another tool like Virtual Box) to set up a virtual server, you run a provisioning script the exact same way on each machine. But using Vagrant on a Windows environment is not always without complications.
 <br>
 **Expected behavior:**
-<p>Run Vagrant up, Virtual machine should be running</p>
 <br>
+Run Vagrant up, Virtual machine should be running
+<br>
+
 **Actual behavior:**
-<p>Blue Screen of death, after repairing disk it returns this error:</p>
+<br>
+Blue Screen of death, after repairing disk it returns this error:
 
 “There was an error while executing VBoxManage, a CLI used by Vagrant for controlling VirtualBox. The command and stderr is shown below.”
 <br>
