@@ -8,6 +8,8 @@ Vagrant is an open-source product for building and maintaining portable virtual 
 
 Vagrant are based on the idea of “virtual” computing, where your application will run in a predictable and repeatable way and this guarantees, that you will feel comfortable, it will work on your co-workers pc, and the production server too. 
 
+# INDSÆT KASPER'S PART HER !! 
+
 ### Hyper-V’s and the Blue Screen of Death!
 As mentioned earlier, once you’ve used Vagrant (and another tool like Virtual Box) to set up a virtual server, you run a provisioning script the exact same way on each machine. But using Vagrant on a Windows environment is not always without complications.
 <br>
