@@ -35,7 +35,9 @@ Unfortunately, this solution is not reliable, because this version of Hyper-V is
 
 ### Setting Up Docker With Vagrant
 Vagrant is designed to work on Linux, Mac OS X, or Windows, but it can be used also with other providers. The underlying virtualization solutions are called providers. To work with Vagrant, you must have at least one provider, and one of the most popular and recommended are VirtualBox. Provisioning in Vagrant is the process of automatic installation and configuration of the system within during.
+
 Vagrant comes with support out of the box for using Docker as a provider, and the provider behaves just like any other provider. The Docker provider does not require a “config.vm.box”. Since the "base image" for a Docker container is pulled from the Docker Index, the box does not add much value, and is optional for this provider.
+
 On systems that cannot run Linux containers natively, such as Mac OS X or Windows, Vagrant automatically spins up a "host VM" to run Docker. This allows your Docker-based Vagrant environments to remain portable and still not being platform-depending.  
 ```ruby
 Vagrant.configure("2") do |config|
