@@ -8,7 +8,43 @@ Vagrant is an open-source product for building and maintaining portable virtual 
 
 Vagrant are based on the idea of “virtual” computing, where your application will run in a predictable and repeatable way and this guarantees, that you will feel comfortable, it will work on your co-workers pc, and the production server too. 
 
-# INDSÆT KASPER'S PART HER !! 
+## What does Vagrant do?
+Vagrant uses virtualization to run an operating system within another, a Virtual Machine. It makes it possible to easily copy the same configurations onto another machine. It allows you to configure a virtual machine in plain text and get it up and running with little trouble.
+
+### Why Vagrant?
+Vagrant matters a great deal, because if you are setting everything up manually, you end up spending a lot of time doing so everytime. In the interest of saving a lot of time and headaches, Vagrant is very useful. It has a low barrier to entry and gets you into development in sooner rather than later. The simplest use case is probably having multiple machines running on one machine with the exact same configurations and Vagrant lets you do this with a simple, plain-text file. 
+
+With Vagrant, the deployment process is streamlined. Vagrant does this by having a .vagrantfile in which you specify exactly what you want and/or need for your VM. The .vagrantfile is a configuration file. The only real prerequisite is command line knowledge. 
+Through the configuration file you can easily grab any operating system you want, and in our case we chose Ubuntu.
+
+### How to use Vagrant
+To use Vagrant you need a VM package installed and in our case that is Oracle’s VM VirtualBox. And of course you need Vagrant installed.
+To set up a VM you need a .vagrantfile which tells Vagrant what to do.
+We used Vagrant to overcome the problem of setting up and deploying a web server and database. 
+
+
+![vagrant1](https://i.imgur.com/dw5jeUU.png)
+
+We start by setting Vagrant to use this config to use digital ocean and setting our private key path
+
+![vagrant2](https://i.imgur.com/bexvQsZ.png)
+
+We then set the provider to digital ocean and set some settings for the web server, such as the operating system, the region and the size.
+
+![vagrant3](https://i.imgur.com/O9jNhBT.png)
+
+Then we setup a server for the database in the same way as the web server. 
+
+With this config we have been able to easily deploy our web server and database. If we require more features, we can quite easily add it to this .vagrantfile and simply redeploy it. It also allows us to set up more machines with the exact same configuration to ensure the best compatibility between all servers.
+
+Now we can do the following command to deploy the server(s) according to the configuration:
+
+$ vagrant up
+
+And access it like so:
+
+$ vagrant ssh
+
 
 ### Hyper-V’s and the Blue Screen of Death!
 As mentioned earlier, once you’ve used Vagrant (and another tool like Virtual Box) to set up a virtual server, you run a provisioning script the exact same way on each machine. But using Vagrant on a Windows environment is not always without complications.
