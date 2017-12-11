@@ -17,7 +17,7 @@ Vagrant matters a great deal, because if you are setting everything up manually,
 With Vagrant, the deployment process is streamlined. Vagrant does this by having a .vagrantfile in which you specify exactly what you want and/or need for your VM. The .vagrantfile is a configuration file. The only real prerequisite is command line knowledge. 
 Through the configuration file you can easily grab any operating system you want, and in our case we chose Ubuntu.
 
-### How to use Vagrant
+### How to use Vagrant with Digital Ocean
 To use Vagrant you need a VM package installed and in our case that is Oracle’s VM VirtualBox. And of course you need Vagrant installed.
 To set up a VM you need a .vagrantfile which tells Vagrant what to do.
 We used Vagrant to overcome the problem of setting up and deploying a web server and database. 
