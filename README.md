@@ -23,15 +23,40 @@ To set up a VM you need a .vagrantfile which tells Vagrant what to do.
 We used Vagrant to overcome the problem of setting up and deploying a web server and database. 
 
 
-![vagrant1](https://i.imgur.com/dw5jeUU.png)
+```ruby
+Vagrant.configure("2") do |config|
+ config.vm.box = 'droplet1'
+ config.vm.box_url = "https://github.com/devopsgroup-io/vagrant-digitalocean/raw/master/box/digital_ocean.box"
+ config.ssh.private_key_path = '~/.ssh/id_rsa'
+config.vm.define "webserver", primary: true do |server|
+```
 
 We start by setting Vagrant to use this config to use digital ocean and setting our private key path
 
-![vagrant2](https://i.imgur.com/bexvQsZ.png)
+```ruby
+   server.vm.provider :digital_ocean do |provider|
+     provider.ssh_key_name = ENV["SSH_KEY_NAME"]
+     provider.token = 'e9c1e71151b99446ac49abeaf1a9f0a50c41f779151b51e1620d52675eda8491'ENV["DIGITAL_OCEAN_TOKEN"]
+     provider.image = 'ubuntu-16-04-x64'
+     provider.region = 'fra1'
+     provider.size = '512mb'
+     provider.privatenetworking = true
+   end
+```
 
 We then set the provider to digital ocean and set some settings for the web server, such as the operating system, the region and the size.
 
-![vagrant3](https://i.imgur.com/O9jNhBT.png)
+```ruby
+config.vm.define "dbserver", primary: false do |server|
+   server.vm.provider :digital_ocean do |provider|
+     provider.ssh_key_name = ENV["SSH_KEY_NAME"]
+     provider.token = ENV["DIGITAL_OCEAN_TOKEN"]
+     provider.image = 'ubuntu-16-04-x64'
+     provider.region = 'fra1'
+     provider.size = '512mb'
+     provider.privatenetworking = true
+   end
+```
 
 Then we setup a server for the database in the same way as the web server. 
 
