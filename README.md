@@ -1,16 +1,10 @@
 # UFO - Blog Entry
 
 ## Abstract
-state the problem
-say why it is interesting
-say what your solution achieves
-say what follows from your solution.
+If you work with software, you’ve probably had the “It works on my machine!” problem. Luckily, these days there are some great tools, that every windows developer, needs to know. With one of the most popular tools for this – Vagrant, you could solve these problems. This blog shows how to do, and some other hacks you need to know as a windows developer! 
 
 
 ## Vagrant Essentiels tips for Windows Developers
-
-If you work with software, you’ve probably had the “It works on my machine!” problem. Luckily, these days there are some great tools, to ease this pain. Every developer, needs to know one of the most popular tools – Vagrant, and how Vagrant is useful to solve problems like “works on my machine” and at the same time lowers development environment setup time.
-
 Vagrant is an open-source product for building and maintaining portable virtual development environments. These virtual systems are cost-efficient to use for developing your project and then disassembling it when you are done. When running a software application, you are also running all the libraries it uses, dependencies it has, and the operating system it’s hosted on. This is where the problems arise. It could be because you’re running a different operating system version or using a different tool set. 
 
 Vagrant are based on the idea of “virtual” computing, where your application will run in a predictable and repeatable way and this guarantees, that you will feel comfortable, it will work on your co-workers pc, and the production server too. 
