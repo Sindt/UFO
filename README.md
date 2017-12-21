@@ -115,5 +115,6 @@ Vagrant can also automatically build and run images based on a local Dockerfile,
 In this way you do not need to install Docker on your local Windows PC, and even better, there are no need for Windows to be running the Docker Hyper-V service, meaning you won’t be facing any BSOD on running “Vagrant up”.   
 
 
- 
+ ### Sources
+ https://24ways.org/2014/what-is-vagrant-and-why-should-i-care/
 
