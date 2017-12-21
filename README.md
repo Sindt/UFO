@@ -1,6 +1,13 @@
 # UFO - Blog Entry
 
-## Vagrant Essentiels : Hacks and Tips for developers
+## Abstract
+state the problem
+say why it is interesting
+say what your solution achieves
+say what follows from your solution.
+
+
+## Vagrant Essentiels tips for Windows Developers
 
 If you work with software, you’ve probably had the “It works on my machine!” problem. Luckily, these days there are some great tools, to ease this pain. Every developer, needs to know one of the most popular tools – Vagrant, and how Vagrant is useful to solve problems like “works on my machine” and at the same time lowers development environment setup time.
 
@@ -116,5 +123,9 @@ In this way you do not need to install Docker on your local Windows PC, and even
 
 
  ### Sources
+ https://hyperv.veeam.com/blog/what-is-hyper-v-technology/
+ 
+ https://www.vagrantup.com/docs/docker/basics.html
+ 
  https://24ways.org/2014/what-is-vagrant-and-why-should-i-care/
 
